@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SYSTÈME ZODYL LOVE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<canvas id="rain"></canvas>
+
+
+
+<div id="intro">
+
+  <img src="walhalla.jpg" id="bgImageManga" alt="Walhalla">
+
+  <div class="intro-content">
+
+    <h1>BAJI D JAP</h1>
+
+    <p>L'ANGE SANS TÊTE...LE PÊCHER DE L'AVARICE</p>
+
+    <button id="enterBtn">SYSTÈME ZODYL LOVE</button>
+
+  </div>
+
+</div>
+
+
+
+<!-- Écran 1 : les 5 catégories -->
+
+<div id="main" class="screen">
+
+  <header>
+
+    <h2>SYSTÈME ZODYL <span class="accent">LOVE</span></h2>
+
+    <div class="sub">Envoie un message d'amour à ta meuf par mail</div>
+
+  </header>
+
+
+
+  <div class="input-box">
+
+    <div class="phone-field">
+
+      <span class="phone-icon">📞</span>
+
+      <input type="text" id="phoneNumber" placeholder="Numéro de ta chérie" oninput="updatePhone()">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="section-title">CLANS D'AMOUR</div>
+
+  <div class="grid" id="categoryGrid"></div>
+
+
+
+  <footer>CREATED BY BAJI D JAP L'ANGE SANS TÊTE</footer>
+
+</div>
+
+
+
+<!-- Écran 2 : les 2 lettres de la catégorie choisie -->
+
+<div id="letters" class="screen">
+
+  <header>
+
+    <h2 id="categoryTitle">CATEGORIE</h2>
+
+    <button class="backBtn" onclick="goBack()">← RETOUR</button>
+
+  </header>
+
+
+
+  <div class="grid" id="letterGrid"></div>
+
+
+
+  <footer>CREATED BY BAJI D JAP L'ANGE SANS TÊTE</footer>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
